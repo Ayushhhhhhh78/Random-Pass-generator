@@ -1,0 +1,105 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #FFF;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: linear-gradient(#1dd1a1,#ff9ff3,#48dbfb);
+    height:100vh;
+    width:100%;
+}
+
+/*main content*/
+#main{
+    border-bottom:7px outset #3a4148;
+    border-right:5px outset #3a4148;
+    border-top:3px outset #3a4148;
+    border-radius:10px;
+    background-color:#576574;
+    height:70vmin;
+    width:60vmin;
+    padding:3%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+/*main content end*/
+
+/*main in content*/
+.main-in{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+h1{
+    font-size:4vmin;
+    color: #FFC312;
+    font-weight: bold;
+}
+.range{
+    flex-direction:column;
+}
+.settings{
+    flex-direction:column;
+}
+.set{
+    justify-content: space-between;
+}
+.set span{
+    color: #FDA7DF;
+}
+button{
+    border-radius:5px;
+    color : #000;
+    width:100%;
+}
+button:hover{
+    cursor:pointer;
+    opacity:0.8;
+}
+.key{
+    flex-direction:column;
+    height:8%;
+}
+.pass{
+    background-color : #FFF;
+    height:100%;
+    color : #FFF;
+}
+.copy{
+    align-self: flex-end;
+    height:auto;
+    background-color: #000;
+    font-weight:bold;
+    color: #FFF;
+    padding:0.7%;
+    width:20%;
+}
+#txt{
+    outline:none;
+    border:none;
+    width:100%;
+    text-align: center;
+}
+/*main in content end*/
+
+@media screen and (max-width:480px){
+    #main{
+        height:100vmin;
+    }
+}
+@media screen and (max-width:290px){
+    #main{
+        height:150vmin;
+    }
+    .range span{
+        font-size:15px;
+    }
+}

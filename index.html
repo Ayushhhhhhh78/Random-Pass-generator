@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Random Password Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!--style-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1 class="main-in">Password Generator</h1>
+
+            <div class="main-in range">
+                <span>Password Length : 6</span>
+                <input type="range" min="3" max="16" value="6" class="main-in">
+            </div>
+
+            <div class="main-in settings">
+                <div class="main-in set">
+                    <span>Include Uppercase</span>
+                    <input type="checkbox" checked data-check="Uppercase">
+                </div>
+                <div class="main-in set">
+                    <span>Include Lowercase</span>
+                    <input type="checkbox" checked data-check="Lowercase">
+                </div>
+                <div class="main-in set">
+                    <span>Include Numbers</span>
+                    <input type="checkbox" checked data-check="Numbers">
+                </div>
+                <div class="main-in set">
+                    <span>Include Special Characters</span>
+                    <input type="checkbox" data-check="Special">
+                </div>
+            </div>
+
+            <div class="main-in">
+            <button id="btn">Generate Password</button>
+            </div>
+
+            <div class="main-in key">
+                <div class="main-in pass">
+                    <input type="text" id="txt" placeholder="your Password" style="color:#000">
+                </div>
+                <button class="copy">Copy</button>
+            </div>
+        </div>
+
+        <!--absolute alert div-->
+        <!--absolute alert div end-->
+    </body>
+
+    <!--script-->
+    <script src="script.js" type="text/javascript"></script>
+</html>
